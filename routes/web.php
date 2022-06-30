@@ -28,3 +28,7 @@ Route::post('/api/tasks', TasksController.'@create');
 Route::get('/api/tasks/{id}', TasksController.'@get');
 Route::patch('/api/tasks/{id}', TasksController.'@update');
 Route::delete('/api/tasks/{id}', TasksController.'@delete');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
