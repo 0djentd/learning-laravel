@@ -6,5 +6,16 @@ use Illuminate\Http\Request;
 
 class TasksController extends Controller
 {
-    //
+    public function create() {
+        return;
+    }
+    public function get() {
+        return;
+    }
+    public function update() {
+        return;
+    }
+    public function delete() {
+        return;
+    }
 }

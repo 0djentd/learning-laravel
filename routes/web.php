@@ -21,10 +21,4 @@ Route::get('/info', function () {
     return view('info');
 });
 
-Route::get('/tasks/{id}', function ($id) {
-    echo $id." ";
-    if ($id > 3) {
-        return "id > 3";
-    };
-    return 'Task id = '.$id;
-});
+Route::get('/tasks/{id}', 'App\Http\Controllers\TasksController@get');
